@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 00;
+    padding: 00;
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 80vw;
+    font-family: "Ubuntu", sans-serif;
+
+}
+.navbar{
+    display: flex;
+    height: 67px;
+    font-family: "Ubuntu", sans-serif;
+}
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+}
+.topLeft{
+width: 50%;
+padding: 1px 0;
+height: 155px;
+
+}
+.topright{
+    width: 50%;
+    height: 155px
+}
+.section2{
+    padding: 73px;
+}
+.section1{
+    padding-left: 63px;
+    padding-right: 63px;
+}
+
+.box{
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid rgb(45, 11, 126);
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+}
+.box ul{
+    list-style-type:none;
+    
+}
+.box ul li{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.section2 h2{
+    font-weight: bold;
+}
+.section2 p{
+    padding: 0 8vw;
+    text-align: center;
+}
+.box h2{
+    font-size: 2rem;
+    padding: 12px 0;
+}
+.plantable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3 table{
+    width: 100%;
+    margin-bottom: 40px ;
+    border-collapse: collapse;
+}
+.section3 table th{
+    width: 23vw;
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+
+}
+.section3 table td{
+    border-bottom: 2px solid black; 
+}
+.section3 table tr{
+    border-bottom: 2px solid black;
+}
+.section3{
+    padding: 73px;
+}
+
+/* Hide the nav-toggle button on larger screens */
+.nav-toggle {
+    display: none;
+}
+
+/* Show the nav-toggle button on smaller screens */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar.show-nav {
+        display: flex;
+    }
+}
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar.show-nav {
+        display: flex;
+    }
+    .navbar li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+}
+.plantable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover {
+    background: #d515d2;
+}
+header {
+    position:relative;
+    width: 110%;
+    background: white;
+    z-index: index 20;
+    box-shadow: 0 2px 4px rgba(116, 7, 231, 0.1);
+}
+.navbar li {
+    list-style: none;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    color: #dd0ee0;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.box {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(141, 12, 192);
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.box:hover {
+    transform: translateY(-20px) ; /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(211, 8, 214, 0.1); /* Shadow on hover */
+}
+.box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.box ul li {
+    margin: 12px 0;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff; /* Background color */
+    color: rgb(2, 2, 2); /* Text color */
+}
+
+/* Updated styling for Compare Plans section */
+
+.plantable {
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+.table th,
+.table td {
+    padding: 15px 0;
+    border-bottom: 2px solid #333;
+}
+
+.table th {
+    background-color: #f2f2f2; /* Background color for table headers */
+    font-weight: bold;
+}
+
+.table td {
+    font-size: 1.2rem; /* Font size for table data */
+}
+
+.check {
+    font-size: 1.5rem; /* Adjusted checkmark size */
+    color: #4CAF50; /* Green color for checkmark */
+}
+
+@media (max-width: 768px) {
+    .plantable {
+        overflow-x: scroll; /* Enable horizontal scrolling on smaller screens */
+    }
+
+    .table th,
+    .table td {
+        padding: 10px 5px; /* Adjusted padding for smaller screens */
+    }
+
+    .check {
+        font-size: 1.2rem; /* Adjusted checkmark size for smaller screens */
+    }
+}
